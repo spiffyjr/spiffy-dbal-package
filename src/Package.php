@@ -2,8 +2,8 @@
 
 namespace Spiffy\DBALPackage;
 
-use Spiffy\Mvc\AbstractMvcPackage;
+use Spiffy\Framework\AbstractPackage;
 
-class Package extends AbstractMvcPackage
+class Package extends AbstractPackage
 {
 }
