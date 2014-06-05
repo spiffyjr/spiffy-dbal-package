@@ -16,13 +16,13 @@ class ConnectionFactory implements ServiceFactory
     private $connection;
 
     /**
-     * @var Configuration
+     * @var \Doctrine\DBAL\Configuration
      */
     private $config;
 
     /**
      * @param array $connection
-     * @param Configuration $config
+     * @param \Doctrine\DBAL\Configuration $config
      */
     final public function __construct(array $connection, Configuration $config = null)
     {
@@ -31,8 +31,8 @@ class ConnectionFactory implements ServiceFactory
     }
 
     /**
-     * @param Injector $i
-     * @return Connection
+     * @param \Spiffy\Inject\Injector $i
+     * @return \Doctrine\DBAL\Connection
      */
     final public function createService(Injector $i)
     {
